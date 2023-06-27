@@ -24,8 +24,8 @@ Here are some ideas to get you started:
 
 ## Natural Language
 ### Fluent
-- Japanese
+- Japanese (Native)
 ### Intermediate 
-- English
+- English (CEFR B2)
 ### Beginner 
 - Chinese
