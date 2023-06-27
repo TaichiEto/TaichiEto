@@ -34,4 +34,4 @@ Here are some ideas to get you started:
 ### Intermediate 
 - English (CEFR B2)
 ### Beginner 
-- Chinese
+- Chinese 普通话
