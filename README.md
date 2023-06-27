@@ -19,4 +19,3 @@ Here are some ideas to get you started:
 - 🔭 B2 at Tokyo City University. Studying Environmental Studies.
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=TaichiEto)]
-(https://github.com/anuraghazra/github-readme-stats)
