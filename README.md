@@ -22,6 +22,12 @@ Here are some ideas to get you started:
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=TaichiEto)
 
+## Tech
+### Intermediate 
+- Developing Minecraft Plugins with Java (Spigot API)
+### Beginner
+- Developing Web Application
+
 ## Natural Language
 ### Fluent
 - Japanese (Native)
