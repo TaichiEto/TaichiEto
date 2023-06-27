@@ -14,3 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+- 🔭 Working as a regular member in a STEAM educational NPO and as an intern in a major Japanese SIer group.
+- 🔭 B2 at Tokyo City University. Studying Environmental Studies.
