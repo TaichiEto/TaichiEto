@@ -24,9 +24,11 @@ Here are some ideas to get you started:
 
 ## Tech
 ### Intermediate 
-- Developing Minecraft Plugins with Java (Spigot API)
+- Java
+  → Developing Spigot Plugins with Spigot API
 ### Beginner
-- Developing Web Application
+- Ruby On Rails
+- React Native
 
 ## Natural Language
 ### Fluent
