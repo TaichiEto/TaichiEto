@@ -28,8 +28,10 @@ Here are some ideas to get you started:
   → Developing Spigot Plugins with Spigot API
 ### Beginner
 - Ruby On Rails
-- React Native
-
+- React
+- Node.js
+- Vue 3
+- C++
 ## Natural Language
 ### Fluent
 - Japanese (Native)
