@@ -26,6 +26,7 @@ Here are some ideas to get you started:
 ### Intermediate 
 - Java
   → Developing Spigot Plugins with Spigot API
+- JavaScript
 ### Beginner
 - Ruby On Rails
 - React
