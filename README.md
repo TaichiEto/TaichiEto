@@ -17,6 +17,5 @@ Here are some ideas to get you started:
 
 - 🔭 Working as a regular member in a STEAM educational NPO and as an intern in a major Japanese SIer group.
 - 🔭 B3 at Tokyo City University. studying Environmental Studies.
-- 🌱 I’m currently fond of studying algorithm on LeetCode with Python3 and C++ and trying some techs for Web Apps.
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
