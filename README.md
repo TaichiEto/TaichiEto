@@ -16,27 +16,7 @@ Here are some ideas to get you started:
 -->
 
 - 🔭 Working as a regular member in a STEAM educational NPO and as an intern in a major Japanese SIer group.
-- 🔭 B2 at Tokyo City University. studying Environmental Studies.
+- 🔭 B3 at Tokyo City University. studying Environmental Studies.
 - 🌱 I’m currently fond of studying algorithm on LeetCode with Python3 and C++ and trying some techs for Web Apps.
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=TaichiEto)
-
-## Tech
-### Intermediate 
-- Java
-  → Developing Spigot Plugins with Spigot API
-- JavaScript
-### Beginner
-- Ruby On Rails
-- React
-- Node.js
-- Vue 3
-- C++
-## Natural Language
-### Fluent
-- Japanese (Native)
-### Intermediate 
-- English (CEFR B2)
-### Beginner 
-- Chinese 普通话
