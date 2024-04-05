@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🔭 Working as a regular member in a STEAM educational NPO and as an intern in a major Japanese SIer group.
+- 🔭 Working as a regular member in a STEAM educational NPO
 - 🔭 B3 at Tokyo City University. studying Environmental Studies.
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
