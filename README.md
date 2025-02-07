@@ -16,6 +16,6 @@ Here are some ideas to get you started:
 -->
 
 - 🔭 Working as a regular member in a STEAM educational NPO and doing long-term internship as an AI engineer.
-- 🔭 B3 at Tokyo City University. studying Environmental Studies.
+- 🔭 B4 at Tokyo City University. studying Environmental Studies.
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
