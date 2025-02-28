@@ -16,6 +16,6 @@ Here are some ideas to get you started:
 -->
 
 - 🔭 B4 at Tokyo City University. studying Environmental Studies.
-- 📫 I have 2 years working experience in IT company as long-term internship
+- 📫 I have been working as a long-term intern at an IT company for two years.
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
