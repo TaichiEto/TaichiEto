@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🔭 Working as a regular member in a STEAM educational NPO and doing long-term internship as an AI engineer.
 - 🔭 B4 at Tokyo City University. studying Environmental Studies.
+- 📫 I have 2 years working experience in IT company as long-term internship
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
