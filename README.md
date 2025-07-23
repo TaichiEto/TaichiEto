@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-- 🔭 B4 at Tokyo City University. studying Environmental Studies. Research on corporate information analysis using natural language processing technology. Focusing on quantitatively evaluating corporate environmental and management initiatives through text analysis of corporate disclosures, aiming to support the realization of sustainable business strategies.
+- 🔭 Research on corporate information analysis using natural language processing technology. Focusing on quantitatively evaluating corporate environmental and management initiatives through text analysis of corporate disclosures, aiming to support the realization of sustainable business strategies.
 - 📫 I have been working as a long-term intern at an IT company for two years.
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
