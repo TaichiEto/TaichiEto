@@ -18,3 +18,5 @@ Here are some ideas to get you started:
 - 🔭 Research on corporate information analysis using natural language processing technology. Focusing on quantitatively evaluating corporate environmental and management initiatives through text analysis of corporate disclosures, aiming to support the realization of sustainable business strategies.
 - 📫 I have been working as a long-term intern at an IT company for two years.
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs/?username=TaichiEto&layout=compact&show_icons=true&theme=dracula&count_private=true)](https://github.com/anuragkr/github-readme-stats)
