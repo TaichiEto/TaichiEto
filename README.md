@@ -24,14 +24,14 @@ Here are some ideas to get you started:
     <img
       align="left"
       height="170px"
-      src="https://github-readme-stats.vercel.app/api?username=TaichiEto&count_private=true&show_icons=true&theme=github_dark"
+      src="https://github-readme-stats-taichietos-projects.vercel.app/api?username=TaichiEto&count_private=true&show_icons=true&theme=github_dark"
     />
   </a>
   <a href="https://github.com/username">
     <img
       align="left"
       height="170px"
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=TaichiEto&layout=compact&theme=github_dark"
+      src="https://github-readme-stats-taichietos-projects.vercel.app/api/top-langs/?username=TaichiEto&layout=compact&theme=github_dark"
     />
   </a>
 </p>
