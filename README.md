@@ -21,9 +21,10 @@ Here are some ideas to get you started:
 
 
 ## 📊 GitHub Stats
-![GitHub Stats](./assets/stats.svg)
-![Top Languages](./assets/top-langs.svg)
 
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=TaichiEto&show_icons=true&theme=dark&include_all_commits=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TaichiEto&layout=compact&theme=dark)
 
 
 
