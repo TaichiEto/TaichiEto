@@ -1,12 +1,10 @@
-name: Update GitHub Stats with Private Repos
+name: Test New Vercel URL
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # 手動実行のみ
 
 jobs:
-  update-stats:
+  test-new-url:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -15,59 +13,52 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
         
-    - name: Download GitHub Stats Images
+    - name: Test New Vercel URL
       env:
-        # Personal Access Token を使用
-        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
-        CUSTOM_API_BASE: https://github-readme-stats-nrqr0uivp-taichietos-projects.vercel.app
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NEW_API_BASE: https://github-readme-stats-51peqpn0u-taichietos-projects.vercel.app
+        OLD_API_BASE: https://github-readme-stats-nrqr0uivp-taichietos-projects.vercel.app
       run: |
-        echo "プライベートリポジトリを含むGitHub統計を取得中..."
+        echo "=== 新しいURL ($NEW_API_BASE) をテスト ==="
         
-        # PATを使ってカスタムAPIにアクセス
-        curl -H "Authorization: token $GITHUB_PAT" \
-          "$CUSTOM_API_BASE/api?username=TaichiEto&show_icons=true&theme=dark&include_all_commits=true&count_private=true" \
-          -o stats.svg
-          
-        curl -H "Authorization: token $GITHUB_PAT" \
-          "$CUSTOM_API_BASE/api/top-langs/?username=TaichiEto&layout=compact&theme=dark&include_private=true&langs_count=8" \
-          -o top-langs.svg
+        # 新しいURLで認証なしテスト
+        echo "1. 認証なしでテスト..."
+        curl -v "$NEW_API_BASE/api?username=TaichiEto&show_icons=true&theme=dark" \
+          -o test-new-noauth.svg 2>&1 | head -n 20
         
-        # デバッグ: ファイル内容確認
-        echo "stats.svg サイズ: $(wc -c < stats.svg) bytes"
-        echo "top-langs.svg サイズ: $(wc -c < top-langs.svg) bytes"
+        echo "新しいURL(認証なし) レスポンス先頭:"
+        head -n 3 test-new-noauth.svg
         
-        # SVGかHTMLかチェック
-        if grep -q "<svg" stats.svg; then
-          echo "✅ stats.svg は有効なSVGファイルです"
-        else
-          echo "❌ stats.svg は認証エラーです:"
-          head -n 3 stats.svg
-          exit 1
-        fi
+        # 新しいURLで認証ありテスト
+        echo -e "\n2. 認証ありでテスト..."
+        curl -v -H "Authorization: token $GITHUB_TOKEN" \
+          "$NEW_API_BASE/api?username=TaichiEto&show_icons=true&theme=dark&count_private=true" \
+          -o test-new-auth.svg 2>&1 | head -n 20
         
-        if grep -q "<svg" top-langs.svg; then
-          echo "✅ top-langs.svg は有効なSVGファイルです"
-        else
-          echo "❌ top-langs.svg は認証エラーです:"
-          head -n 3 top-langs.svg
-          exit 1
-        fi
+        echo "新しいURL(認証あり) レスポンス先頭:"
+        head -n 3 test-new-auth.svg
         
-        # 画像を assets フォルダに移動
-        mkdir -p assets
-        mv stats.svg assets/
-        mv top-langs.svg assets/
-    
-    - name: Commit and push if changed
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        # 比較のため旧URLもテスト
+        echo -e "\n3. 旧URLで認証ありテスト（比較用）..."
+        curl -v -H "Authorization: token $GITHUB_TOKEN" \
+          "$OLD_API_BASE/api?username=TaichiEto&show_icons=true&theme=dark&count_private=true" \
+          -o test-old-auth.svg 2>&1 | head -n 20
         
-        git add assets/
-        if git diff --staged --quiet; then
-          echo "変更がありません"
-          exit 0
-        fi
+        echo "旧URL(認証あり) レスポンス先頭:"
+        head -n 3 test-old-auth.svg
         
-        git commit -m "📊 Update GitHub stats with private repos [automated]"
-        git push
+        # ファイルサイズ比較
+        echo -e "\n=== ファイルサイズ比較 ==="
+        echo "新URL(認証なし): $(wc -c < test-new-noauth.svg) bytes"
+        echo "新URL(認証あり): $(wc -c < test-new-auth.svg) bytes"
+        echo "旧URL(認証あり): $(wc -c < test-old-auth.svg) bytes"
+        
+        # SVGファイルかチェック
+        echo -e "\n=== SVG判定 ==="
+        for file in test-new-noauth.svg test-new-auth.svg test-old-auth.svg; do
+          if grep -q "<svg" "$file"; then
+            echo "✅ $file は有効なSVGファイル"
+          else
+            echo "❌ $file は無効（認証エラーまたはHTML）"
+          fi
+        done
