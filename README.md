@@ -19,4 +19,19 @@ Here are some ideas to get you started:
 - 📫 I have been working as a long-term intern at an IT company for two years.
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
-![TaichiEto's Top Languages](https://github-readme-stats-taichietos-projects.vercel.app/api/top-langs/?username=TaichiEto&count_private=true&layout=compact&theme=dracula)
+<p>
+  <a href="https://github.com/TaichiEto">
+    <img
+      align="left"
+      height="170px"
+      src="https://github-readme-stats-TaichiEto.vercel.app/api?username=username&count_private=true&show_icons=true&theme=github_dark&include_all_commits=true"
+    />
+  </a>
+  <a href="https://github.com/TaichiEto">
+    <img
+      align="left"
+      height="170px"
+      src="https://github-readme-stats-TaichiEto.vercel.app/api/top-langs/?username=username&layout=compact&theme=github_dark&count_private=true&include_all_commits=true"
+    />
+  </a>
+</p>
