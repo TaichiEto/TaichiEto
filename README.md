@@ -20,6 +20,14 @@ Here are some ideas to get you started:
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
 
+<!-- GitHub Stats -->
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=USERNAME&show_icons=true&theme=github_dark&count_private=true)
+
+<!-- Top Languages -->
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=USERNAME&layout=compact&theme=github_dark)
+
+
+
 
 
 
