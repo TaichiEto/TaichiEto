@@ -19,5 +19,4 @@ Here are some ideas to get you started:
 - 📫 I have been working as a long-term intern at an IT company for two years.
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
-[![Anurag's GitHub stats](https://github-readme-stats-git-master-taichietos-projects.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&...&count_private=true)](...)
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=TaichiEto&show_icons=true&theme=dracula&include_all_commits=true&count_private=true)](https://github.com/anuragkr/github-readme-stats)
+[![Top Langs](https://github-readme-stats-git-master-taichietos-projects.vercel.app/api/top-langs/?username=TaichiEto&count_private=true)](...)
