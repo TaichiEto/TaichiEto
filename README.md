@@ -21,13 +21,10 @@ Here are some ideas to get you started:
 
 
 <!-- GitHub Stats -->
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=USERNAME&show_icons=true&theme=github_dark&count_private=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=TaichiEto&show_icons=true&theme=github_dark)
 
 <!-- Top Languages -->
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=USERNAME&layout=compact&theme=github_dark)
-
-
-
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TaichiEto&layout=compact&theme=github_dark)
 
 
 
