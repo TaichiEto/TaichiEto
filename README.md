@@ -20,18 +20,18 @@ Here are some ideas to get you started:
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
 <p>
-  <a href="https://github.com/TaichiEto">
+  <a href="https://github.com/username">
     <img
       align="left"
       height="170px"
-      src="https://github-readme-stats-TaichiEto.vercel.app/api?username=username&count_private=true&show_icons=true&theme=github_dark&include_all_commits=true"
+      src="https://github-readme-stats.vercel.app/api?username=TaichiEto&count_private=true&show_icons=true&theme=github_dark"
     />
   </a>
-  <a href="https://github.com/TaichiEto">
+  <a href="https://github.com/username">
     <img
       align="left"
       height="170px"
-      src="https://github-readme-stats-TaichiEto.vercel.app/api/top-langs/?username=username&layout=compact&theme=github_dark&count_private=true&include_all_commits=true"
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=TaichiEto&layout=compact&theme=github_dark"
     />
   </a>
 </p>
