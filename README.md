@@ -23,6 +23,9 @@ Here are some ideas to get you started:
 
 ![Top Languages](https://github-readme-stats-git-master-taichietos-projects.vercel.app/api/top-langs/?username=TaichiEto&layout=compact&theme=github_dark&cache_seconds=0)
 
+![TaichiEto's GitHub Stats](https://github-readme-stats-git-master-taichietos-projects.vercel.app/api?username=TaichiEto&count_private=true&show_icons=true&theme=github_dark)
+
+
 
 
 
