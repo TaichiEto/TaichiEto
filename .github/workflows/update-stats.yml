@@ -26,19 +26,45 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         CUSTOM_API_BASE: https://github-readme-stats-nrqr0uivp-taichietos-projects.vercel.app
       run: |
+        # デバッグ: APIの応答を確認
+        echo "API応答をチェック中..."
+        
         # 統計画像を取得
-        curl -H "Authorization: token $GITHUB_TOKEN" \
+        curl -v -H "Authorization: token $GITHUB_TOKEN" \
           "$CUSTOM_API_BASE/api?username=TaichiEto&show_icons=true&theme=dark&include_all_commits=true&count_private=true" \
           -o stats.svg
           
-        # 使用言語画像を取得
-        curl -H "Authorization: token $GITHUB_TOKEN" \
+        # 言語統計画像を取得  
+        curl -v -H "Authorization: token $GITHUB_TOKEN" \
           "$CUSTOM_API_BASE/api/top-langs/?username=TaichiEto&layout=compact&theme=dark&include_private=true" \
           -o top-langs.svg
+        
+        # ファイルサイズとコンテンツを確認
+        echo "stats.svg サイズ: $(wc -c < stats.svg) bytes"
+        echo "top-langs.svg サイズ: $(wc -c < top-langs.svg) bytes"
+        
+        # SVGファイルの先頭を確認
+        echo "=== stats.svg の先頭 ==="
+        head -n 5 stats.svg
+        echo "=== top-langs.svg の先頭 ==="
+        head -n 5 top-langs.svg
           
         # ファイルが正常にダウンロードされたか確認
         if [ ! -f stats.svg ] || [ ! -f top-langs.svg ]; then
           echo "画像のダウンロードに失敗しました"
+          exit 1
+        fi
+        
+        # SVGファイルとして有効かチェック
+        if ! grep -q "<svg" stats.svg; then
+          echo "stats.svg は有効なSVGファイルではありません"
+          cat stats.svg
+          exit 1
+        fi
+        
+        if ! grep -q "<svg" top-langs.svg; then
+          echo "top-langs.svg は有効なSVGファイルではありません" 
+          cat top-langs.svg
           exit 1
         fi
         
