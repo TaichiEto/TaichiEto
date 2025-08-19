@@ -1,70 +1,55 @@
-name: Update GitHub Stats
+name: Update GitHub Stats with Private Repos
 
 on:
   schedule:
-    # 毎日午前9時（JST）に実行（UTC 0時）
     - cron: '0 0 * * *'
-  workflow_dispatch: # 手動実行も可能
+  workflow_dispatch:
 
 jobs:
   update-stats:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # リポジトリへの書き込み権限
+      contents: write
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
         
     - name: Download GitHub Stats Images
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Personal Access Token を使用
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
         CUSTOM_API_BASE: https://github-readme-stats-nrqr0uivp-taichietos-projects.vercel.app
       run: |
-        # デバッグ: APIの応答を確認
-        echo "API応答をチェック中..."
+        echo "プライベートリポジトリを含むGitHub統計を取得中..."
         
-        # 統計画像を取得
-        curl -v -H "Authorization: token $GITHUB_TOKEN" \
+        # PATを使ってカスタムAPIにアクセス
+        curl -H "Authorization: token $GITHUB_PAT" \
           "$CUSTOM_API_BASE/api?username=TaichiEto&show_icons=true&theme=dark&include_all_commits=true&count_private=true" \
           -o stats.svg
           
-        # 言語統計画像を取得  
-        curl -v -H "Authorization: token $GITHUB_TOKEN" \
-          "$CUSTOM_API_BASE/api/top-langs/?username=TaichiEto&layout=compact&theme=dark&include_private=true" \
+        curl -H "Authorization: token $GITHUB_PAT" \
+          "$CUSTOM_API_BASE/api/top-langs/?username=TaichiEto&layout=compact&theme=dark&include_private=true&langs_count=8" \
           -o top-langs.svg
         
-        # ファイルサイズとコンテンツを確認
+        # デバッグ: ファイル内容確認
         echo "stats.svg サイズ: $(wc -c < stats.svg) bytes"
         echo "top-langs.svg サイズ: $(wc -c < top-langs.svg) bytes"
         
-        # SVGファイルの先頭を確認
-        echo "=== stats.svg の先頭 ==="
-        head -n 5 stats.svg
-        echo "=== top-langs.svg の先頭 ==="
-        head -n 5 top-langs.svg
-          
-        # ファイルが正常にダウンロードされたか確認
-        if [ ! -f stats.svg ] || [ ! -f top-langs.svg ]; then
-          echo "画像のダウンロードに失敗しました"
+        # SVGかHTMLかチェック
+        if grep -q "<svg" stats.svg; then
+          echo "✅ stats.svg は有効なSVGファイルです"
+        else
+          echo "❌ stats.svg は認証エラーです:"
+          head -n 3 stats.svg
           exit 1
         fi
         
-        # SVGファイルとして有効かチェック
-        if ! grep -q "<svg" stats.svg; then
-          echo "stats.svg は有効なSVGファイルではありません"
-          cat stats.svg
-          exit 1
-        fi
-        
-        if ! grep -q "<svg" top-langs.svg; then
-          echo "top-langs.svg は有効なSVGファイルではありません" 
-          cat top-langs.svg
+        if grep -q "<svg" top-langs.svg; then
+          echo "✅ top-langs.svg は有効なSVGファイルです"
+        else
+          echo "❌ top-langs.svg は認証エラーです:"
+          head -n 3 top-langs.svg
           exit 1
         fi
         
@@ -78,12 +63,11 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         
-        # 変更があるかチェック
         git add assets/
         if git diff --staged --quiet; then
           echo "変更がありません"
           exit 0
         fi
         
-        git commit -m "📊 Update GitHub stats [automated]"
+        git commit -m "📊 Update GitHub stats with private repos [automated]"
         git push
