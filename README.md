@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 -->
 
 - 🔭 Research on corporate information analysis using natural language processing technology. Focusing on quantitatively evaluating corporate environmental and management initiatives through text analysis of corporate disclosures, aiming to support the realization of sustainable business strategies.
-- 📫 I have been working as a long-term intern at an IT company for 3 years.
+- 📫 I have been working as a long-term intern at an IT company for 4 years.
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
 ![](http://github-profile-summary-cards2-taichietos-projects.vercel.app/api/cards/profile-details?username=TaichiEto&theme=algolia)
