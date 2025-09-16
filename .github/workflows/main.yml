@@ -1,0 +1,23 @@
+name: GitHub-Profile-Summary-Cards
+
+on:
+  schedule:
+    # 1日1回（JST朝4時相当）。好きに変えてOK
+    - cron: "0 19 * * *"
+  workflow_dispatch: {}
+  # リポを作った直後にも走らせたいなら create: を足してOK
+  # create: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 生成画像をコミットするために必要
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_CARD_TOKEN }}   # ← さっきのSecret名と一致させる
+        with:
+          USERNAME: taichieto                               # ← 固定でOK
