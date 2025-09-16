@@ -19,4 +19,10 @@ Here are some ideas to get you started:
 - 📫 I have been working as a long-term intern at an IT company for 4 years.
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
-![](http://github-profile-summary-cards2-taichietos-projects.vercel.app/api/cards/profile-details?username=TaichiEto&theme=algolia)
+### GitHub Profile Summary Cards
+
+![](https://raw.githubusercontent.com/taichieto/taichieto/main/profile-summary-card-output/tokyonight/0-profile-details.svg)
+![](https://raw.githubusercontent.com/taichieto/taichieto/main/profile-summary-card-output/tokyonight/1-repos-per-language.svg)
+![](https://raw.githubusercontent.com/taichieto/taichieto/main/profile-summary-card-output/tokyonight/2-most-commit-language.svg)
+![](https://raw.githubusercontent.com/taichieto/taichieto/main/profile-summary-card-output/tokyonight/3-stats.svg)
+![](https://raw.githubusercontent.com/taichieto/taichieto/main/profile-summary-card-output/tokyonight/4-productive-time.svg)
