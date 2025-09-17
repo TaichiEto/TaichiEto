@@ -20,7 +20,6 @@ Here are some ideas to get you started:
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
 ### GitHub Profile Summary Cards
-
 ![](https://raw.githubusercontent.com/taichieto/taichieto/main/profile-summary-card-output/tokyonight/0-profile-details.svg)
 ![](https://raw.githubusercontent.com/taichieto/taichieto/main/profile-summary-card-output/tokyonight/1-repos-per-language.svg)
 ![](https://raw.githubusercontent.com/taichieto/taichieto/main/profile-summary-card-output/tokyonight/2-most-commit-language.svg)
