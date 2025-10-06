@@ -19,6 +19,9 @@ Here are some ideas to get you started:
 - 📫 I have been working as a long-term intern at an IT company for 4 years.
 - ⚡ My Dream: I want to solve environmental problems and make our society sustainable with the IT technology
 
+### Portfolio
+https://taichieto.com
+
 ### GitHub Profile Summary Cards
 ![](https://raw.githubusercontent.com/taichieto/taichieto/main/profile-summary-card-output/tokyonight/0-profile-details.svg)
 ![](https://raw.githubusercontent.com/taichieto/taichieto/main/profile-summary-card-output/tokyonight/1-repos-per-language.svg)
