@@ -10,7 +10,7 @@
 ### 👨‍💻 About Me
 
 - 🔭 **Research:** Exploring **Natural Language Processing (NLP)** for corporate information analysis — quantifying environmental and management strategies from text data to drive **sustainable innovation**.  
-- 💼 **Experience:** 4+ years as a long-term **software engineer intern**. 
+- 💼 **Experience:** 3+ years as a long-term **software engineer intern**. 
 - 🌱 **Dream:** Empower society to tackle environmental challenges with the power of **data and technology**.  
 - 🌐 **Portfolio:** [**taichieto.com**](https://taichieto.com)
 
