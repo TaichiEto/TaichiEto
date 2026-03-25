@@ -52,3 +52,13 @@
 ```
 
     
+
+---
+
+![](./4-productive-time.svg)
+
+```
+![](https://raw.githubusercontent.com/TaichiEto/TaichiEto/main/profile-summary-card-output/yeblu/4-productive-time.svg)
+```
+
+    

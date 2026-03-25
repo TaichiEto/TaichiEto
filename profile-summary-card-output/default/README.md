@@ -52,3 +52,13 @@
 ```
 
     
+
+---
+
+![](./4-productive-time.svg)
+
+```
+![](https://raw.githubusercontent.com/TaichiEto/TaichiEto/main/profile-summary-card-output/default/4-productive-time.svg)
+```
+
+    
