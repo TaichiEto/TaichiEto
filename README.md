@@ -15,6 +15,21 @@
 
 ---
 
+### 🏆 Awards & Achievements
+
+- 🏆 **経営情報学会 第21回学生研究論文発表会 優秀賞** (2026年2月)
+  - 卒業研究について発表した論文が優秀賞を受賞しました。
+- 🏅 **後援会長賞** (2026年3月)
+  - 東京都市大学 環境経営システム学科学生会 会長としての活動が評価され受賞しました。
+- 🥇 **pairs PdM 1 Day Internship 最優秀チーム賞**
+  - 既存サービスのユーザー体験（UX）を向上させる新機能の企画・提案を実施。利用者の行動特性や市場トレンドを踏まえた課題整理と、それに基づくUI/UX改善アイデアのプレゼンテーションが評価されました。
+- 🌟 **株式会社10tan コアバリュー賞**
+  - 「仕事は与えられるものではなく、自分で創るものである」「WHYをしっかりと考え、何をすべきか自ら考え行動に移す」という同社のコアバリューを体現する姿勢と行動が評価され受賞しました。
+- 💡 **異能vation 2018 ノミネート**
+  - 墓石に貼付したQRコードから故人の情報を閲覧できるアプリのアイデアが評価され、ノミネートを果たしました。
+
+---
+
 ### 🚀 Tech Stack
 
 <p align="center">
@@ -50,5 +65,3 @@
   <a href="https://linkedin.com/in/taichieto" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="https://x.com/itachitaichi" target="_blank"><img src="https://img.shields.io/badge/X_(Twitter)-000000.svg?style=for-the-badge&logo=x&logoColor=white"></a>
 </p>
-
----
