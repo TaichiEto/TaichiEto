@@ -1,8 +1,6 @@
 <div align="center">
 
 # 🌏 Konnichiwa, World! 👋  
-### _Transforming Sustainability Through AI and System Thinking_
-
 </div>
 
 ---
